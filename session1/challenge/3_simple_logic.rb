@@ -8,5 +8,6 @@
 # ten_twenty(6) # => 10
 
 def ten_twenty(n)
-  # your code goes here
+  return 20 if n.odd?
+  10
 end
