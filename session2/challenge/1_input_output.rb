@@ -8,5 +8,10 @@
 # "11\n7\n18\n" to standard output.
 
 def sum_difference_product
-  # your code goes here
+  print "Please type in two numbers separated by a space"
+  answer = gets.chomp.split
+  sum = answer[0].to_i + answer[1].to_i
+  difference = answer[0].to_i - answer[1].to_i
+  product = answer[0].to_i * answer[1].to_i
+  puts "#{sum}", "#{difference}", "#{product}"
 end
