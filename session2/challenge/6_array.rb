@@ -14,3 +14,12 @@
 # prime_chars? ['ab', 'cd']       # => false
 # prime_chars? ['a', 'bcd']       # => false
 # prime_chars? ['a', 'b', 'cd']   # => false
+
+def prime_chars?(strings)
+    sum = strings.join.length 
+    return false if sum <= 1
+    for i in 2...sum
+        return false if sum % i == 0
+    end
+    true
+end 
