@@ -19,7 +19,12 @@
 # and when you think it is correct, you can test it with  $ rake 2:2
 
 def hi_hi_goodbye
-  # your code here
+  puts "Please enter a number between 1 and 10"
+  while number = gets
+    number.to_i.times { print "hi " } 
+    break if number.chomp == "bye"
+  end
+  puts "goodbye"
 end
 
 
